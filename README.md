@@ -7,7 +7,12 @@ Le projet, lui, est 100% le mien.
 
 JE Tien a dire que j'ai utiliser le logitiel Antares c'est ici ou j'ai tous fait en numerique
 
-Mon age est actuelment 13ans et je suis marocain qui parle principalement le fancait
+Mon age est actuelment 13ans et le Projet et en court de devloppement sa fait 6-7jour que j'y travaille dessu environ 1 a 6h par jours
+TOUT  se que je fait je le fait de A a Z sauf lorsque mon logitiel ne le suporte pas
+Ma technique fair minimum 2-3jour je fait tou seul si arive pas j'ai le droit de me rensenier sur les methode
+C'est un dommain que je connait particulierment bien car y eter passionner depuit tou petit vere mes 5ans (bricolage carton robotique 😂).
+Pourquoi j'ai utiliser RISC-V et pas cree ma propre architecture ? car cargo suport RISC-V et RUST c'est mon langage preferer je peut pas utilise c/c++ apres sa imposible
+ducoup cree une archetchture se sera un plan pour plus tard 😉.
 
 🎯 Le Projet
 Mon but est de créer un CPU 32 bits entièrement fait par moi.
