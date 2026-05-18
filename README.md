@@ -7,6 +7,8 @@ Le projet, lui, est 100% le mien.
 
 JE Tien a dire que j'ai utiliser le logitiel Antares c'est ici ou j'ai tous fait en numerique
 
+Mon age est actuelment 13ans et je suis francait
+
 🎯 Le Projet
 Mon but est de créer un CPU 32 bits entièrement fait par moi.
 Je ne copie personne, je crée tout avec mes propres idées et ma logique.
