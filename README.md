@@ -1,5 +1,10 @@
 # Cpu-32-Bits-RISC-V-Project-MSL5P-
 
+⚠️ TEXTE CORRIGÉ PAR IA (car mon talent en français est presque nul !)
+📝 C'est moi qui ai fait tous les choix de design, 
+l'IA a juste corrigé l'orthographe et amélioré la formulation pour mon portfolio.
+Le projet, lui, est 100% le mien.
+
 🎯 Le Projet
 Mon but est de créer un CPU 32 bits entièrement fait par moi.
 Je ne copie personne, je crée tout avec mes propres idées et ma logique.
