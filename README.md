@@ -337,4 +337,211 @@ Il y a deux raisons :
 
 Le logiciel ne possède pas les composants mémoire transistorisés nécessaires.
 Je devrai utiliser la ROM native du logiciel pour pouvoir compiler correctement le projet dans la Tang Nano 9K.
-⏳ À SUIVRE...
+
+# 🌍 La migration — La catastrophe
+
+Un jour, je me suis réveillé et Windows commençait vraiment à me fatiguer :
+
+* lenteurs ;
+* bugs ;
+* système lourd ;
+* problèmes constants.
+
+Du coup, j'ai décidé de migrer encore une fois vers Linux 😭
+
+Et cette fois, je suis parti sur Arch Linux avec Hyprland.
+
+Mais le problème, c'est que mon PC utilise un CPU Gemini Lake avec un ancien écran.
+
+Et là… catastrophe 💀
+
+Problèmes d'affichage.
+Drivers.
+Écran qui bug.
+Affichage qui saute.
+Système instable.
+
+Du coup j'ai passé énormément de temps à corriger tous les problèmes liés à la migration.
+
+Et pendant cette migration…
+
+j'ai sauvegardé les mauvais fichiers.
+
+Et là…
+
+TOUT perdu 😭
+
+Le CPU.
+L'ALU.
+Les registres.
+Le câblage.
+Les versions.
+Les tests.
+
+Tout.
+
+Le seul truc que j'avais encore : mes feuilles papier.
+
+---
+
+# 😵 Moment de fatigue
+
+Honnêtement, à ce moment-là, j'étais vraiment au bord d'abandonner.
+
+Le projet était devenu énorme à mes yeux.
+
+J'avais déjà investi environ 16 heures de travail dedans.
+Et pour moi, c'était énorme.
+
+J'ai essayé de récupérer les fichiers.
+
+Impossible.
+
+J'ai essayé plusieurs méthodes.
+
+Toujours impossible.
+
+Du coup, j'ai préféré faire une pause.
+
+Parce que je sais que prendre des décisions quand je suis mentalement détruit, c'est rarement une bonne idée.
+
+Alors j'ai arrêté pendant 1 jour complet.
+
+---
+
+# 🔥 Moment incroyable
+
+Puis un matin… je me suis réveillé.
+
+Et là, au lieu d'abandonner, j'ai repris mes feuilles.
+
+J'ai recommencé toute l'architecture en 4 bits pour repartir sur des bases propres et vérifier toute ma logique correctement.
+
+Et en refaisant tout, j'ai commencé à réfléchir à plein de nouvelles optimisations.
+
+Par exemple, mon ADD utilisait maintenant un transistor de moins 😭
+
+J'ai aussi totalement repensé le SUB.
+
+Parce qu'entre-temps, j'avais oublié certaines parties de mes anciennes versions.
+
+Mais même si j'avais oublié certains détails, toutes les connaissances et la logique que j'avais acquises étaient toujours dans ma tête.
+
+Du coup, j'ai tout recommencé.
+
+FULL ADDER.
+FULL SUB.
+ALU.
+Décodeurs.
+Registres avancés.
+Clock.
+
+Tout.
+
+Et cette fois… encore plus vite qu'avant.
+
+J'ai même réussi à intégrer ma propre ISA.
+
+Et maintenant mon CPU est bientôt terminé 😭🔥
+
+Actuellement il est en phase beta :
+
+* quelques bugs dans l'ALU ;
+* certains mauvais branchements ;
+* quelques corrections restantes.
+
+Mais maintenant, pour la première fois…
+
+je travaille enfin sur mon propre langage de programmation.
+
+---
+
+# 🧠 MON ISA
+
+Et là… vous allez peut-être rire 😭
+
+Parce que pour un CPU 4 bits…
+
+mes instructions font 16 bits 💀
+
+Oui.
+16 bits.
+
+Mais ce n'est absolument pas au hasard.
+
+J'ai réfléchi à cette architecture pendant la nuit entière avant de faire ce choix.
+
+Le problème, c'est que ma mémoire est statique.
+
+Je ne peux pas décider dynamiquement de sa taille comme sur un vrai système moderne.
+
+Du coup, j'ai préféré créer une ISA plus large et plus confortable dès le début.
+
+Le fonctionnement est simple :
+
+* 8 bits pour les données ;
+* 8 bits pour les opcodes et le contrôle.
+
+Total :
+16 bits par instruction.
+
+---
+
+# 🧩 Détail des champs
+
+| Bits    | Nom           | Description                                                    |
+| ------- | ------------- | -------------------------------------------------------------- |
+| 0 - 1   | Sélecteur     | `01 = ALU`, `10 = Mémoire`                                     |
+| 2 - 4   | Décodeur      | Pour l'ALU : opération. Pour la mémoire : registre destination |
+| 5       | Action FINISH | `1 = Écraser la donnée du registre`                            |
+| 6 - 7   | Réservé       | Debug futur ou extensions                                      |
+| 8 - 11  | Opérande 1    | Premier nombre (4 bits)                                        |
+| 12 - 15 | Opérande 2    | Deuxième nombre (4 bits)                                       |
+
+---
+
+# ⚡ Opérations ALU (Sélecteur = 01)
+
+| Code | Opération |
+| ---- | --------- |
+| 000  | ADD       |
+| 100  | SUB       |
+| 010  | OR        |
+| 110  | AND       |
+| 001  | XOR       |
+
+---
+
+# 💾 Opérations Mémoire / Registres (Sélecteur = 10)
+
+| Code | Action          |
+| ---- | --------------- |
+| 000  | Stocker dans R1 |
+| 001  | Stocker dans R2 |
+| 010  | Stocker dans R3 |
+| 011  | Stocker dans R4 |
+
+---
+
+# 🎯 Exemple d'instruction
+
+Exemple pour stocker `5 + 3` dans `R1` :
+
+Sélecteur  Décodeur  FINISH  Réservé  Opérande1  Opérande2
+   01        000        1       00       0101       0011
+
+
+Résultat binaire :
+0100010010100011
+
+
+Et pour une addition simple :
+0100000000000000
+
+Voilà 😭
+Très simple… en apparence.
+
+---
+
+# ⏳ À SUIVRE...
+
