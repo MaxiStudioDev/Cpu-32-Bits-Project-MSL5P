@@ -1979,33 +1979,65 @@ const PROJECTS = [
     category: "hardware",
     badge: "🧠 Hardware",
     badgeColor: "var(--accent)",
+
     tags: [
       { label: "Architecture CPU", color: "#f59e0b" },
       { label: "Logique numérique", color: "#ef4444" },
       { label: "Rust", color: "#f97316" },
+      { label: "RISC-V", color: "#22c55e" },
+      { label: "ISA Design", color: "#3b82f6" },
       { label: "From Scratch", color: "#7c3aed" }
     ],
+
     desc: "Conception d'un processeur custom inspiré RISC-V entièrement développé de zéro. Architecture, ALU, registres, ISA, logique numérique et conception modulaire créés à la main.",
+
     heroEmoji: "🧠",
+
     cardImages: [
       { emoji: "🧠", label: "Architecture CPU" },
       { emoji: "📐", label: "ISA Design" },
       { emoji: "⚡", label: "Logique ALU" },
+      { emoji: "🔌", label: "Bus & Registres" },
     ],
+
     links: [
-      { label: "GitHub", icon: "📁", href: "#" }
+      {
+        label: "GitHub",
+        icon: "📁",
+        href: "https://github.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P"
+      },
+
+      {
+        label: "Télécharger le CPU",
+        icon: "⬇️",
+        href: "https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/heads/main/CPU.acp"
+      },
+
+      {
+        label: "Antares",
+        icon: "🛠️",
+        href: "https://antarescircuit.io/"
+      }
     ],
 
     editorContent: `
 
 <h1>🧠 Cpu-32-Bits-RISC-V-Project-MSL5P</h1>
 
-<p><strong>Projet retardé suite à une migration vers Arch Linux (Hyprland).</strong></p>
+<p>
+<strong>
+Projet retardé suite à une migration vers Arch Linux (Hyprland).
+</strong>
+</p>
 
-<p>J'ai sauvegardé les mauvais fichiers et j'ai TOUT perdu 😭<br>
-Absolument tout, sauf mes feuilles papier.</p>
+<p>
+J'ai sauvegardé les mauvais fichiers et j'ai TOUT perdu 😭<br>
+Absolument tout sauf mes feuilles papier.
+</p>
 
-<p>Du coup, j'ai décidé de changer un peu le processus :</p>
+<p>
+Du coup, j'ai décidé de changer un peu le processus :
+</p>
 
 <ul>
   <li>commencer par du <strong>4 bits</strong> ;</li>
@@ -2017,9 +2049,13 @@ Absolument tout, sauf mes feuilles papier.</p>
 
 <h1>⚠️ TEXTE CORRIGÉ PAR IA</h1>
 
-<p>Mon niveau en français est assez mauvais 😭</p>
+<p>
+Mon niveau en français est catastrophique 😭
+</p>
 
-<p>L'IA a uniquement :</p>
+<p>
+L'IA a uniquement :
+</p>
 
 <ul>
   <li>corrigé l'orthographe ;</li>
@@ -2027,15 +2063,31 @@ Absolument tout, sauf mes feuilles papier.</p>
   <li>rendu le texte plus propre pour mon portfolio.</li>
 </ul>
 
-<p>Mais toutes les idées, l'architecture, la logique et le design du CPU viennent entièrement de moi.</p>
+<p>
+Mais toutes les idées, l'architecture, la logique et le design du CPU viennent entièrement de moi.
+</p>
 
 <hr>
 
 <h1>🛠️ Logiciel utilisé</h1>
 
-<p>J'utilise <strong>Antares</strong> (<em>antarescircuit.io</em>) pour toute la conception numérique du projet.</p>
+<p>
+J'utilise <strong>Antares</strong> pour toute la conception numérique du projet.
+</p>
 
-<p>C'est ici que j'ai créé :</p>
+<p>
+🔗 Site officiel :
+</p>
+
+<p>
+<a href="https://antarescircuit.io/" target="_blank">
+https://antarescircuit.io/
+</a>
+</p>
+
+<p>
+C'est ici que j'ai créé :
+</p>
 
 <ul>
   <li>mon ALU ;</li>
@@ -2050,53 +2102,77 @@ Absolument tout, sauf mes feuilles papier.</p>
 
 <h1>👶 Mon âge et le projet</h1>
 
-<p>J'ai actuellement <strong>13 ans</strong>.</p>
+<p>
+J'ai actuellement <strong>13 ans</strong>.
+</p>
 
-<p>Le projet est encore en cours de développement.</p>
+<p>
+Le projet est encore en cours de développement.
+</p>
 
-<p>J'y travaille depuis environ <strong>6 à 7 jours</strong>, entre <strong>1h et 6h par jour</strong>.</p>
+<p>
+J'y travaille depuis environ <strong>6 à 7 jours</strong>, entre <strong>1h et 6h par jour</strong>.
+</p>
 
-<p>Tout ce que je fais, je le fais de A à Z sauf lorsque le logiciel ne supporte pas certaines fonctionnalités.</p>
+<p>
+Tout ce que je fais, je le fais de A à Z sauf lorsque le logiciel ne supporte pas certaines fonctionnalités.
+</p>
 
-<p>Ma technique personnelle :</p>
+<p>
+Ma technique personnelle :
+</p>
 
 <ul>
   <li>minimum 2 à 3 jours à chercher seul ;</li>
   <li>et seulement après j'autorise Internet à m'aider 😭</li>
 </ul>
 
-<p>C'est un domaine qui me passionne depuis tout petit, vers mes 5 ans environ avec :</p>
+<p>
+C'est un domaine qui me passionne depuis tout petit :
+</p>
 
 <ul>
-  <li>le bricolage ;</li>
-  <li>les LEGO ;</li>
-  <li>la robotique en carton 😂</li>
+  <li>bricolage ;</li>
+  <li>LEGO ;</li>
+  <li>robotique carton 😂</li>
 </ul>
 
 <hr>
 
 <h1>⚡ Pourquoi RISC-V ?</h1>
 
-<p>Pourquoi utiliser RISC-V au lieu de créer ma propre architecture ?</p>
+<p>
+Pourquoi utiliser RISC-V au lieu de créer ma propre architecture ?
+</p>
 
-<p>Parce que :</p>
+<p>
+Parce que :
+</p>
 
 <ul>
   <li><strong>Rust</strong> est mon langage préféré ;</li>
   <li>et l'écosystème Rust supporte très bien RISC-V.</li>
 </ul>
 
-<p>Je ne voulais pas dépendre du C ou du C++ pour ce projet.</p>
+<p>
+Je ne voulais pas dépendre du C/C++ pour ce projet.
+</p>
 
-<p>Créer ma propre architecture ISA totalement custom reste un objectif futur 😉</p>
+<p>
+Créer ma propre architecture ISA totalement custom reste un objectif futur 😉
+</p>
 
 <hr>
 
 <h1>🌍 Open Source</h1>
 
-<p>Le projet deviendra bientôt entièrement <strong>Open Source</strong>.</p>
+<p>
+Le projet deviendra bientôt entièrement <strong>Open Source</strong>.
+</p>
 
-<p>Le but :</p>
+<p>
+Le but :
+</p>
 
 <ul>
   <li>aider les gens à apprendre ;</li>
@@ -2104,27 +2180,49 @@ Absolument tout, sauf mes feuilles papier.</p>
   <li>laisser visibles mes erreurs et mon évolution.</li>
 </ul>
 
-<p>Je garde volontairement certaines erreurs dans les fichiers afin que les gens puissent voir les vrais problèmes rencontrés pendant le développement.</p>
-
-<p>Malheureusement, les très anciennes versions ont été supprimées par erreur 😭</p>
-
-<p>Le projet sera totalement publié une fois terminé.</p>
-
-<p>Mais je donne déjà accès aux fichiers actuels du prototype 4 bits :</p>
+<p>
+Je garde volontairement certaines erreurs dans les fichiers afin que les gens puissent voir les vrais problèmes rencontrés pendant le développement.
+</p>
 
 <p>
-https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/heads/main/CPU.acp
+Malheureusement, les très anciennes versions ont été supprimées par erreur 😭
+</p>
+
+<p>
+Le projet sera totalement publié une fois terminé.
+</p>
+
+<h3>📁 GitHub</h3>
+
+<p>
+<a href="https://github.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P" target="_blank">
+https://github.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P
+</a>
+</p>
+
+<h3>⬇️ Téléchargement du CPU</h3>
+
+<p>
+<a href="https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/heads/main/CPU.acp" target="_blank">
+Télécharger CPU.acp
+</a>
 </p>
 
 <hr>
 
 <h1>🎯 Le Projet</h1>
 
-<p>Mon but est de créer un CPU entièrement développé par moi-même.</p>
+<p>
+Mon but est de créer un CPU entièrement développé par moi-même.
+</p>
 
-<p>Je ne copie personne.</p>
+<p>
+Je ne copie personne.
+</p>
 
-<p>Je développe :</p>
+<p>
+Je développe :
+</p>
 
 <ul>
   <li>l'architecture ;</li>
@@ -2135,233 +2233,33 @@ https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/h
   <li>et les modules.</li>
 </ul>
 
-<p>Depuis longtemps, je suis fasciné par le fonctionnement réel des ordinateurs et l'électronique logique.</p>
-
-<p>Je préfère comprendre comment les machines fonctionnent intérieurement plutôt que simplement utiliser des logiciels.</p>
-
-<hr>
-
-<h1>⚡ ALU — Le commencement</h1>
-
-<p>J'ai commencé par l'ALU (<em>Arithmetic Logic Unit</em>) parce que c'était déjà un domaine que je maîtrisais relativement bien.</p>
-
-<p>Vers mes 12 ans, j'avais déjà créé une calculatrice 8 bits sur Minecraft avec uniquement :</p>
-
-<ul>
-  <li>de la Redstone ;</li>
-  <li>des FULL ADDER ;</li>
-  <li>et de la logique pure.</li>
-</ul>
-
-<p>J'avais développé ça en environ 3 jours juste par passion.</p>
-
-<hr>
-
-<h1>🧠 Réflexion et conception</h1>
-
-<p>Au début, je faisais énormément de schémas sur papier pendant les cours.</p>
-
-<p>Je réfléchissais directement à la logique des additions binaires :</p>
-
-<ul>
-  <li><code>1 + 1 = 10</code></li>
-  <li><code>1 + 0 = 1</code></li>
-</ul>
-
-<p>Je me suis donc dit que lorsque les deux entrées sont à <code>1</code>, une retenue devait être créée.</p>
-
-<p>J'ai alors utilisé une porte logique <strong>AND</strong> :</p>
-
-<ul>
-  <li><code>1 AND 1 = 1</code></li>
-  <li>toutes les autres combinaisons donnent <code>0</code></li>
-</ul>
-
-<p>Premier objectif validé ✅</p>
-
-<p>Ensuite, j'ai imaginé énormément de versions différentes de mes ADDER directement sur papier.</p>
-
-<p>Je faisais beaucoup de théorie avant même de construire les circuits.</p>
-
-<p>Mais rapidement, un problème est apparu :</p>
-
-<p>beaucoup de mes idées fonctionnaient sur papier mais ne correspondaient pas à des architectures propres pour les simulateurs logiques modernes.</p>
-
-<p>Du coup, j'ai adapté toute mon ALU à une structure plus stable et plus réaliste.</p>
-
-<hr>
-
-<h1>🔧 Ajout de sécurités</h1>
-
-<p>En travaillant sur l'architecture, j'ai aussi ajouté plusieurs sécurités logiques.</p>
-
-<p>Le but était d'éviter :</p>
-
-<ul>
-  <li>des calculs involontaires ;</li>
-  <li>des changements d'état non désirés ;</li>
-  <li>ou des comportements instables.</li>
-</ul>
-
-<hr>
-
-<h1>🚀 Le FULL ADDER</h1>
-
-<p>Ensuite, je suis passé au FULL ADDER.</p>
-
-<p>Le but était maintenant de gérer :</p>
-
-<ul>
-  <li>les deux bits d'entrée ;</li>
-  <li>et la retenue provenant de l'addition précédente.</li>
-</ul>
-
-<p>C'est ce qui permet de relier plusieurs additions ensemble afin de créer une architecture capable de gérer plusieurs bits.</p>
-
-<hr>
-
-<h1>💀 Le SUB — Le vrai début des problèmes</h1>
-
-<p>J'étais super content de mon FULL ADDER.</p>
-
-<p>Mais ensuite je suis passé au SUB 😭</p>
-
-<p>Et là… les vrais problèmes ont commencé.</p>
-
-<p>J'avais deux solutions :</p>
-
-<h3>Solution 1</h3>
-
-<p>Utiliser la méthode classique :</p>
-
-<p><code>A + (!B)</code></p>
-
-<p>Technique utilisée dans énormément de vrais processeurs.</p>
-
-<p>Mais au début je ne lui faisais pas totalement confiance.</p>
-
-<h3>Solution 2</h3>
-
-<p>Créer entièrement mon propre système de soustraction.</p>
-
-<p>Et évidemment… j'ai choisi cette solution 😭</p>
-
-<hr>
-
-<h1>⚠️ Le FULL SUB — L'enfer</h1>
-
-<p>Au début, mon SUB fonctionnait parfaitement.</p>
-
-<p>Mais ensuite j'ai commencé le FULL SUB :</p>
-
-<ul>
-  <li>gestion des retenues ;</li>
-  <li>des emprunts binaires ;</li>
-  <li>des dettes ;</li>
-  <li>et des cas négatifs.</li>
-</ul>
-
-<p>Et là… c'était l'enfer.</p>
-
-<hr>
-
-<h1>🐛 Les bugs</h1>
-
-<p>Après énormément de travail, je termine enfin mon FULL SUB.</p>
-
-<p>Je teste tout.</p>
-
-<p>Tout fonctionne.</p>
-
-<p>J'étais à deux doigts de hurler de joie 😭</p>
-
-<p>Puis la réalité me rattrape 💀</p>
-
-<h3>Premier bug</h3>
-
-<p>Dans certains cas négatifs très précis :</p>
-
-<p><code>0 - 1 + 0 - 0</code></p>
-
-<p>le système me donnait <code>-3</code> en décimal.</p>
-
-<p>Totalement faux 😭</p>
-
-<h3>Deuxième bug</h3>
-
-<p>Les emprunts binaires n'étaient pas stables.</p>
-
-<p>Et là… j'étais vraiment proche d'abandonner.</p>
-
-<hr>
-
-<h1>🔥 Le déclic</h1>
-
-<p>J'ai fait une pause de 2 jours.</p>
-
-<p>Puis un matin… énorme déclic.</p>
-
-<p>Je reprends toute ma logique du FULL ADDER.</p>
-
-<p>Et c'est à ce moment-là que mon FULL ADDER V3 stable est né.</p>
-
-<p>Puis j'ai créé une V2 du SUB avec une technique totalement barbare 😭</p>
-
-<h3>9 XOR</h3>
-
-<p>Oui.</p>
-
-<p><strong>9 XOR.</strong></p>
-
-<p>J'étais moi-même en train de rire devant ce que j'avais créé juste pour sécuriser certains cas négatifs.</p>
-
-<hr>
-
-<h1>⚡ La vraie solution</h1>
-
-<p>Puis j'ai retesté :</p>
-
-<p><code>A + (-B)</code></p>
-
-<p>Au début ça ne fonctionnait pas.</p>
-
-<p>Alors j'ai dupliqué certains modules et reconstruit la logique autrement.</p>
-
-<p>Et là… tout fonctionne.</p>
-
-<p>C'est aussi à ce moment-là que j'ai compris que :</p>
-
-<p>la retenue n'était pas seulement une retenue.</p>
-
-<p>Elle indiquait aussi si le système était dans un état négatif ou non.</p>
-
-<hr>
-
-<h1>🚀 Architecture scalable</h1>
-
-<p>Une fois ce problème réglé :</p>
-
-<ul>
-  <li>ALU 4 bits ;</li>
-  <li>ALU 8 bits ;</li>
-  <li>ALU 16 bits ;</li>
-</ul>
-
-<p>créés en environ 10 minutes 😭</p>
-
-<p>Parce que dès le début j'avais pensé toute mon architecture comme un système modulaire.</p>
+<p>
+Depuis longtemps, je suis fasciné par le fonctionnement réel des ordinateurs et l'électronique logique.
+</p>
+
+<p>
+Je préfère comprendre comment les machines fonctionnent intérieurement plutôt que simplement utiliser des logiciels.
+</p>
 
 <hr>
 
 <h1>💀 LA MIGRATION</h1>
 
-<p>Un jour je me suis réveillé et Windows me détruisait mentalement 😭</p>
+<p>
+Un jour je me suis réveillé et Windows me détruisait mentalement 😭
+</p>
 
-<p>Lent, bugs, freezes…</p>
+<p>
+Lent, bugs, freezes…
+</p>
 
-<p>Du coup j'ai décidé de migrer pour la millième fois vers Linux.</p>
+<p>
+Du coup j'ai décidé de migrer pour la millième fois vers Linux.
+</p>
 
-<p>Mais gros problème :</p>
+<p>
+Mais gros problème :
+</p>
 
 <ul>
   <li>CPU Gemini Lake ;</li>
@@ -2370,49 +2268,85 @@ https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/h
   <li>bugs d'affichage.</li>
 </ul>
 
-<p>Finalement j'ai réussi la migration vers Arch Linux + Hyprland.</p>
+<p>
+Finalement j'ai réussi la migration vers Arch Linux + Hyprland.
+</p>
 
-<p>Mais pendant la sauvegarde…</p>
+<p>
+Mais pendant la sauvegarde…
+</p>
 
-<p>j'ai sauvegardé les mauvais fichiers 😭</p>
+<p>
+j'ai sauvegardé les mauvais fichiers 😭
+</p>
 
-<p>Et là :</p>
+<p>
+Et là :
+</p>
 
-<p><strong>TOUT perdu.</strong></p>
+<p>
+<strong>TOUT perdu.</strong>
+</p>
 
 <hr>
 
 <h1>😔 Moment de fatigue</h1>
 
-<p>J'étais dans un moment extrêmement délicat.</p>
+<p>
+J'étais dans un moment extrêmement délicat.
+</p>
 
-<p>Le projet me semblait gigantesque.</p>
+<p>
+Le projet me semblait gigantesque.
+</p>
 
-<p>J'avais investi environ <strong>16 heures</strong> dedans.</p>
+<p>
+J'avais investi environ <strong>16 heures</strong> dedans.
+</p>
 
-<p>Et pour moi, c'était énorme.</p>
+<p>
+Et pour moi, c'était énorme.
+</p>
 
-<p>J'ai essayé de récupérer les données.</p>
+<p>
+J'ai essayé de récupérer les données.
+</p>
 
-<p>Impossible.</p>
+<p>
+Impossible.
+</p>
 
-<p>Alors j'ai pris une pause d'une journée.</p>
+<p>
+Alors j'ai pris une pause d'une journée.
+</p>
 
-<p>Parce que je refuse de prendre des décisions quand je suis dans un état mental fragile.</p>
+<p>
+Parce que je refuse de prendre des décisions quand je suis dans un état mental fragile.
+</p>
 
 <hr>
 
 <h1>🔥 Moment incroyable</h1>
 
-<p>Puis un matin je me suis réveillé.</p>
+<p>
+Puis un matin je me suis réveillé.
+</p>
 
-<p>J'ai repris mes feuilles papier.</p>
+<p>
+J'ai repris mes feuilles papier.
+</p>
 
-<p>Et j'ai recommencé.</p>
+<p>
+Et j'ai recommencé.
+</p>
 
-<p>Version 4 bits.</p>
+<p>
+Version 4 bits.
+</p>
 
-<p>Et là plusieurs trucs incroyables sont arrivés :</p>
+<p>
+Et là plusieurs trucs incroyables sont arrivés :
+</p>
 
 <ul>
   <li>mon ADD utilisait un transistor de moins ;</li>
@@ -2421,11 +2355,17 @@ https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/h
   <li>j'ai amélioré mon architecture.</li>
 </ul>
 
-<p>J'avais oublié certaines parties…</p>
+<p>
+J'avais oublié certaines parties…
+</p>
 
-<p>mais les connaissances étaient toujours dans ma tête.</p>
+<p>
+mais les connaissances étaient toujours dans ma tête.
+</p>
 
-<p>Du coup j'ai retravaillé :</p>
+<p>
+Du coup j'ai retravaillé :
+</p>
 
 <ul>
   <li>FULL SUB ;</li>
@@ -2437,202 +2377,250 @@ https://raw.githubusercontent.com/MaxiStudioDev/Cpu-32-Bits-Project-MSL5P/refs/h
   <li>et même mon propre ISA.</li>
 </ul>
 
-<p>Et maintenant mon CPU est bientôt terminé 😭</p>
+<p>
+Et maintenant mon CPU est bientôt terminé 😭
+</p>
 
-<p>Il est actuellement en bêta avec encore quelques bugs mineurs dans l'ALU à cause de mauvais branchements.</p>
+<p>
+Il est actuellement en bêta avec encore quelques bugs mineurs dans l'ALU à cause de mauvais branchements.
+</p>
 
-<p>Mais maintenant je travaille enfin sur mon propre langage de programmation.</p>
+<p>
+Mais maintenant je travaille enfin sur mon propre langage de programmation.
+</p>
 
 <hr>
 
 <h1>🧠 MON ISA</h1>
 
-<p>Alors là… vous allez rire 😭</p>
+<p>
+Alors là… vous allez rire 😭
+</p>
 
-<p>Pour un CPU 4 bits, mes instructions font <strong>16 bits</strong>.</p>
+<p>
+Pour un CPU 4 bits, mes instructions font <strong>16 bits</strong>.
+</p>
 
-<p>Oui.</p>
+<p>
+Oui.
+</p>
 
-<p><strong>16 bits.</strong></p>
+<p>
+<strong>16 bits.</strong>
+</p>
 
-<p>Mais ce n'est pas du hasard.</p>
+<p>
+Mais ce n'est pas du hasard.
+</p>
 
-<p>J'y ai réfléchi pendant la nuit entière.</p>
+<p>
+J'y ai réfléchi pendant la nuit entière.
+</p>
 
-<p>J'ai choisi :</p>
+<p>
+J'ai choisi :
+</p>
 
 <ul>
   <li>8 bits pour les données ;</li>
   <li>8 bits pour l'opcode.</li>
 </ul>
 
-<p>Parce que ma mémoire est statique.</p>
+<p>
+Parce que ma mémoire est statique.
+</p>
 
-<p>Je ne peux pas décider dynamiquement de la mémoire disponible.</p>
+<p>
+Je ne peux pas décider dynamiquement de la mémoire disponible.
+</p>
 
 <hr>
 
 <h1>🧠 Détail des champs</h1>
 
-<table>
+<table style="width:100%; border-collapse: collapse; margin-top: 20px;">
+
+<thead>
 <tr>
-<th>Bits</th>
-<th>Nom</th>
-<th>Description</th>
+<th style="border:1px solid #444; padding:12px;">Bits</th>
+<th style="border:1px solid #444; padding:12px;">Nom</th>
+<th style="border:1px solid #444; padding:12px;">Description</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td style="border:1px solid #444; padding:12px;">0 - 1</td>
+<td style="border:1px solid #444; padding:12px;">Sélecteur</td>
+<td style="border:1px solid #444; padding:12px;">01 = ALU, 10 = Mémoire</td>
 </tr>
 
 <tr>
-<td>0 - 1</td>
-<td>Sélecteur</td>
-<td>01 = ALU, 10 = Mémoire</td>
+<td style="border:1px solid #444; padding:12px;">2 - 4</td>
+<td style="border:1px solid #444; padding:12px;">Décodeur</td>
+<td style="border:1px solid #444; padding:12px;">
+ALU = opération<br>
+Mémoire = registre destination
+</td>
 </tr>
 
 <tr>
-<td>2 - 4</td>
-<td>Décodeur</td>
-<td>ALU = opération / Mémoire = registre destination</td>
+<td style="border:1px solid #444; padding:12px;">5</td>
+<td style="border:1px solid #444; padding:12px;">FINISH</td>
+<td style="border:1px solid #444; padding:12px;">
+1 = écraser la donnée précédente
+</td>
 </tr>
 
 <tr>
-<td>5</td>
-<td>FINISH</td>
-<td>1 = écraser la donnée précédente</td>
+<td style="border:1px solid #444; padding:12px;">6 - 7</td>
+<td style="border:1px solid #444; padding:12px;">Réservé</td>
+<td style="border:1px solid #444; padding:12px;">
+Debug futur ou extensions
+</td>
 </tr>
 
 <tr>
-<td>6 - 7</td>
-<td>Réservé</td>
-<td>Debug futur ou extensions</td>
+<td style="border:1px solid #444; padding:12px;">8 - 11</td>
+<td style="border:1px solid #444; padding:12px;">Opérande 1</td>
+<td style="border:1px solid #444; padding:12px;">
+Premier nombre (4 bits)
+</td>
 </tr>
 
 <tr>
-<td>8 - 11</td>
-<td>Opérande 1</td>
-<td>Premier nombre</td>
+<td style="border:1px solid #444; padding:12px;">12 - 15</td>
+<td style="border:1px solid #444; padding:12px;">Opérande 2</td>
+<td style="border:1px solid #444; padding:12px;">
+Deuxième nombre (4 bits)
+</td>
 </tr>
 
-<tr>
-<td>12 - 15</td>
-<td>Opérande 2</td>
-<td>Deuxième nombre</td>
-</tr>
-
+</tbody>
 </table>
 
 <hr>
 
 <h1>⚡ Opérations ALU</h1>
 
-<table>
+<table style="width:100%; border-collapse: collapse; margin-top:20px;">
+
+<thead>
 <tr>
-<th>Code</th>
-<th>Opération</th>
+<th style="border:1px solid #444; padding:12px;">Code</th>
+<th style="border:1px solid #444; padding:12px;">Opération</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td style="border:1px solid #444; padding:12px;">000</td>
+<td style="border:1px solid #444; padding:12px;">ADD (Addition)</td>
 </tr>
 
 <tr>
-<td>000</td>
-<td>ADD</td>
+<td style="border:1px solid #444; padding:12px;">100</td>
+<td style="border:1px solid #444; padding:12px;">SUB (Soustraction)</td>
 </tr>
 
 <tr>
-<td>100</td>
-<td>SUB</td>
+<td style="border:1px solid #444; padding:12px;">010</td>
+<td style="border:1px solid #444; padding:12px;">OR (OU Logique)</td>
 </tr>
 
 <tr>
-<td>010</td>
-<td>OR</td>
+<td style="border:1px solid #444; padding:12px;">110</td>
+<td style="border:1px solid #444; padding:12px;">AND (ET Logique)</td>
 </tr>
 
 <tr>
-<td>110</td>
-<td>AND</td>
+<td style="border:1px solid #444; padding:12px;">001</td>
+<td style="border:1px solid #444; padding:12px;">XOR (OU Exclusif)</td>
 </tr>
 
-<tr>
-<td>001</td>
-<td>XOR</td>
-</tr>
-
+</tbody>
 </table>
 
 <hr>
 
 <h1>💾 Opérations mémoire</h1>
 
-<table>
+<table style="width:100%; border-collapse: collapse; margin-top:20px;">
+
+<thead>
 <tr>
-<th>Code</th>
-<th>Action</th>
+<th style="border:1px solid #444; padding:12px;">Code</th>
+<th style="border:1px solid #444; padding:12px;">Action</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td style="border:1px solid #444; padding:12px;">000</td>
+<td style="border:1px solid #444; padding:12px;">Stocker dans R1</td>
 </tr>
 
 <tr>
-<td>000</td>
-<td>Stocker dans R1</td>
+<td style="border:1px solid #444; padding:12px;">001</td>
+<td style="border:1px solid #444; padding:12px;">Stocker dans R2</td>
 </tr>
 
 <tr>
-<td>001</td>
-<td>Stocker dans R2</td>
+<td style="border:1px solid #444; padding:12px;">010</td>
+<td style="border:1px solid #444; padding:12px;">Stocker dans R3</td>
 </tr>
 
 <tr>
-<td>010</td>
-<td>Stocker dans R3</td>
+<td style="border:1px solid #444; padding:12px;">011</td>
+<td style="border:1px solid #444; padding:12px;">Stocker dans R4</td>
 </tr>
 
-<tr>
-<td>011</td>
-<td>Stocker dans R4</td>
-</tr>
-
+</tbody>
 </table>
 
 <hr>
 
 <h1>🎯 Exemple d'instruction</h1>
 
-<p>Pour stocker :</p>
+<p>
+Pour stocker :
+</p>
 
-<p><code>5 + 3</code> dans R1 :</p>
+<p>
+<code>5 + 3</code> dans R1 :
+</p>
 
 <pre>
 Sélecteur  Décodeur  FINISH  Rien  Opérande1  Opérande2
 01         000       1       00    0101       0011
 </pre>
 
-<p>Résultat :</p>
+<p>
+Résultat :
+</p>
 
-<p><code>0100010010100011</code></p>
+<p>
+<code>0100010010100011</code>
+</p>
 
-<p>Et pour une addition simple :</p>
+<p>
+Et pour une addition simple :
+</p>
 
-<p><code>0100000000000000</code></p>
+<p>
+<code>0100000000000000</code>
+</p>
 
-<p>Voilà 😭</p>
+<p>
+Voilà 😭
+</p>
 
-<p>Très simple mais totalement fonctionnel.</p>
-
-<hr>
-
-<h1>📦 La ROM — Spoiler</h1>
-
-<p>Le dernier élément sur lequel j'ai commencé à travailler :</p>
-
-<p>la ROM.</p>
-
-<p>Mais pour l'instant elle est quasiment vide 😭</p>
-
-<p>Je suis surtout dans une phase d'analyse pour préparer la suite du CPU.</p>
-
-<p>Même si je comprends le fonctionnement réel d'une ROM, je ne peux pas totalement la recréer de zéro dans ce projet.</p>
-
-<p>Deux raisons :</p>
-
-<ul>
-  <li>le logiciel ne possède pas les composants mémoire nécessaires ;</li>
-  <li>je dois utiliser la ROM native du logiciel pour la future compilation Tang Nano 9K.</li>
-</ul>
+<p>
+Très simple mais totalement fonctionnel.
+</p>
 
 <hr>
 
